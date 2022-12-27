@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins: 108,280,300,400,508,680, 700,888,989");
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----Background----- */
+
+body {
+    background-image: url(fix2.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #ffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+                0 0 0 8px rgba(255,255,255,0.1),
+                0 0 20px rgba(255,255,255,1);
+                animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+    }
+}
+
+span:nth-child(1) {
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+
+span:nth-child(2) {
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+span:nth-child(3) {
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+span:nth-child(4) {
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+
+span:nth-child(5) {
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(6) {
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+span:nth-child(7) {
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+span:nth-child(8) {
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+span:nth-child(9) {
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+
+span:nth-child(10) {
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+
+span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 1px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #ffff, transparent);
+}
+
+/* -----Background Kelar----- */
+
+/* -----NavBar----- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px 10px 20px;
+}
+
+.logo {
+    cursor: grab;
+    width: 7%;
+    height: 7%;
+}
+
+.ul-navbar {
+    list-style: none;
+    font-family: 'montserrat';
+    font-weight: bold;
+}
+
+.ul-navbar li {
+    display: inline-block;
+    height: 20px;
+    padding: 10px 10px;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 0;
+    color: #ffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+a:hover {
+    background: #c364fa;
+    color: #050801;
+    box-shadow: 0 0 5px #c364fa,
+                0 0 25px #c364fa,
+                0 0 50px #c364fa,
+                0 0 200px #c364fa;
+}
+
+/* -----NavBar Kelar----- */
+
+/* -----Content----- */
+.home-content {
+    cursor: grab;
+    position: absolute;
+    font-family: 'Poppins';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-content h1 {
+    font-size: 11vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.home-content h1:nth-child(1) {
+    color: #6b00b7;
+    -webkit-animation: 2px #6b00b7;
+}
+
+.home-content h1:nth-child(2) { 
+    color: #c364fa;
+    animation: banyu 4s ease-in-out infinite;
+}
+
+@keyframes banyu {
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+.h3-content {
+    cursor: grab;
+    width: 600px;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 20px;
+    color: #ffff;
+    margin: 50px;
+    padding: 5px 100px;
+}
+/* -----Content Kelar----- */
+
+/* -----Footer----- */
+footer {
+    font-family: 'Montserrat';
+    color: #ffff;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding: 10px 0 10px 0;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    width: 5%;
+    margin: 10px 10px;
+    height: 5%;
+}
+
+.bawah {
+    cursor: pointer;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+/* -----Footer Kelar----- */
