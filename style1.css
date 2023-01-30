@@ -206,7 +206,6 @@ a:hover {
 
 .home-content h1:nth-child(1) {
     color: #6b00b7;
-    -webkit-animation: 2px #6b00b7;
 }
 
 .home-content h1:nth-child(2) { 
@@ -267,5 +266,40 @@ footer {
     text-align: center;
 }
 
-
 /* -----Footer Kelar----- */
+
+/* -----Content About Us----- */
+.judul-about {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #ffff;
+    margin: 20px;
+    padding: 0 0 10px 40px;
+}
+
+.gambar {
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.teks-about {
+    line-height: 30px;
+    color: #ffff;
+}
+
+.teks-about-ungu{
+    color: #c364fa;
+}
+
+.content-about {
+    margin: 30px;
+    padding: 0 80px;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+
+
+/* -----Content About Us Kelar----- */
